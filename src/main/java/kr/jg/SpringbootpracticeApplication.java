@@ -2,7 +2,6 @@ package kr.jg;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
@@ -21,7 +20,7 @@ public class SpringbootpracticeApplication {
 		new SpringApplicationBuilder()
 			.sources(SpringbootpracticeApplication.class)
 				/* .bannerMode(Banner.Mode.OFF) */
-			.web(WebApplicationType.NONE) // .SERVLET .REACTIVE
+				/* .web(WebApplicationType.NONE) */ // .SERVLET .REACTIVE
 			.listeners(new ApplicationStartingListener())
 			.run(args);
 	}

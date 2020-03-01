@@ -15,7 +15,11 @@ public class ApplicationRunner1 implements ApplicationRunner {
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		logger.info("ApplicationRunner1");
+		logger.trace("ApplicationRunner1 TRACE");
+		logger.debug("ApplicationRunner1 DEBUG");
+		logger.info("ApplicationRunner1 INFO");
+		logger.warn("ApplicationRunner1 WARN");
+		logger.error("ApplicationRunner1 ERROR");
 	}
 	
 }
